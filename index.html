@@ -50,6 +50,20 @@
       </div>
     </section>
 
+    <section class="prose" id="case-study" aria-labelledby="case-title">
+      <h2 id="case-title">A closer look: from basketball to golf</h2>
+      <p>For the prompt <em>“Fact: Michael Jordan plays the sport of”</em>, Gemma-2-2B completes the sentence with <em>“basketball.”</em> This example follows a semantic group from the constructed circuit to its underlying features and a steering experiment.</p>
+      <h3>1. Focus on a semantic group</h3>
+      <p>The computational graph contains 436 features and 4,207 edges. The circuit view foregrounds the Basketball semantic group and its relation to the selected output, providing a focused starting point for examining the underlying features.</p>
+      <figure style="margin:24px 0"><img src="circuit.png" alt="Circuit view relating the Basketball semantic group to the basketball output for the Michael Jordan prompt." loading="lazy" style="width:100%;height:auto"><figcaption>The Basketball semantic group provides an entry point into the computational graph.</figcaption></figure>
+      <h3>2. Inspect the feature evidence</h3>
+      <p>Selecting Basketball exposes its 13 features alongside a heatmap of their positions across layers and tokens. Analysts can inspect the features within the semantic group while retaining the context of the constructed circuit.</p>
+      <figure style="margin:24px 0"><img src="heatmap.png" alt="Basketball semantic group selected with a feature-position heatmap and a list of 13 features." loading="lazy" style="width:100%;height:auto"><figcaption>Feature-level evidence complements the semantic-group view.</figcaption></figure>
+      <h3>3. Compare an intervention with the baseline</h3>
+      <p>In the illustrated steering experiment, a negative adjustment of −4.3 is applied to the Basketball semantic group at the token <em>“Jordan.”</em> The steered completion changes to <em>“golf”</em>, while the baseline remains <em>“basketball.”</em> This output change offers evidence to investigate the selected features’ role; it does not by itself establish a complete explanation of the model’s behavior.</p>
+      <figure style="margin:24px 0"><img src="steering.png" alt="Steering experiment showing a minus 4.3 adjustment at Jordan and golf versus basketball completions." loading="lazy" style="width:100%;height:auto"><figcaption>Baseline and steered outputs make the intervention’s observed effect explicit.</figcaption></figure>
+    </section>
+
     <section class="video-guide wide" id="user-guide" aria-labelledby="video-title">
       <div class="section-intro"><div class="eyebrow">USER GUIDE</div><h2 id="video-title">See CircuitExplorer in action.</h2><p>A 4-minute 35-second video walkthrough of the system.</p></div>
       <video controls playsinline preload="metadata" aria-label="CircuitExplorer video user guide">
