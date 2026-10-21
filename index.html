@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CircuitExplorer makes LLM circuit analysis easier through hierarchical semantic groups and interactive graph exploration.">
+  <meta name="description" content="SCALE makes LLM circuit analysis easier through hierarchical semantic groups and interactive graph exploration.">
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#ffffff">
-  <title>CircuitExplorer: Understanding LLM Mechanism through Scalable Circuit Analysis</title>
+  <title>SCALE: Understanding LLM Mechanism through Scalable Circuit Analysis</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
   <main>
     <header class="hero">
       <div class="eyebrow"><span class="mark" aria-hidden="true">⌘</span> INTERACTIVE MODEL INTERPRETABILITY</div>
-      <h1>CircuitExplorer<span>Understanding LLM Mechanism<br>through Scalable Circuit Analysis</span></h1>
+      <h1>SCALE<span>Understanding LLM Mechanism<br>through Scalable Circuit Analysis</span></h1>
       <div class="actions">
         <a class="button primary" href="https://king-prawn-app-eoefo.ondigitalocean.app/" target="_blank" rel="noopener noreferrer">Live Demo <span aria-hidden="true">↗</span></a>
         <a class="button secondary" href="#user-guide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6l2 2 2-2h6v16h-6l-2 1-2-1H4zM12 6v15"/></svg>Video guide</a>
@@ -29,7 +29,7 @@
         <button id="tab-steering" role="tab" aria-selected="false" aria-controls="view-panel" tabindex="-1" data-view="steering">03 <span>Steering experiments</span></button>
       </div>
       <figure id="view-panel" role="tabpanel" aria-labelledby="tab-circuit">
-        <button class="image-button" id="enlarge" aria-label="Enlarge system screenshot"><img id="system-image" src="circuit.png" alt="Circuit Explorer showing the Basketball cluster and its connections to the basketball output for the Michael Jordan prompt." width="2764" height="1404"><span class="enlarge-label">⤢ View full size</span></button>
+        <button class="image-button" id="enlarge" aria-label="Enlarge system screenshot"><img id="system-image" src="circuit.png" alt="SCALE showing the Basketball cluster and its connections to the basketball output for the Michael Jordan prompt." width="2764" height="1404"><span class="enlarge-label">⤢ View full size</span></button>
         <figcaption><strong id="view-title">Explore the connections behind an output.</strong><span id="view-description">Explore the Basketball cluster and its connections to the selected basketball output token.</span></figcaption>
       </figure>
     </section>
@@ -37,8 +37,8 @@
     <section class="prose" id="overview">
       <h2>Abstract</h2>
       <p>Circuit discovery approaches have increasingly been used to explain Large Language Models (LLMs) by constructing a computational graph with nodes representing internal features and directional edges indicating how one feature influences another. However, such approaches often require analysts to trace a huge volume of individual features and influences across them, and manually infer their semantic meaning, making circuit discovery approaches hard to use in practice.</p>
-      <p>To fill this gap, we propose CircuitExplorer, a novel visual analytics system to help analysts easily explore and comprehensively understand the reasoning pathways of LLMs. It organizes LLM-learned features into hierarchical semantic groups, and then utilizes a directed acyclic graph (DAG)-based visualization to display these semantic groups, enabling progressive and scalable circuit analysis.</p>
-      <p>We extensively evaluated CircuitExplorer through two case studies and a user study with 16 expert participants. The results demonstrated its effectiveness and usability in supporting circuit analysis for explaining LLMs.</p>
+      <p>To fill this gap, we propose SCALE, a novel visual analytics system to help analysts easily explore and comprehensively understand the reasoning pathways of LLMs. It organizes LLM-learned features into hierarchical semantic groups, and then utilizes a directed acyclic graph (DAG)-based visualization to display these semantic groups, enabling progressive and scalable circuit analysis.</p>
+      <p>We extensively evaluated SCALE through two case studies and a user study with 16 expert participants. The results demonstrated its effectiveness and usability in supporting circuit analysis for explaining LLMs.</p>
     </section>
 
     <section class="workflow wide" aria-labelledby="workflow-title">
@@ -65,15 +65,15 @@
     </section>
 
     <section class="video-guide wide" id="user-guide" aria-labelledby="video-title">
-      <div class="section-intro"><div class="eyebrow">USER GUIDE</div><h2 id="video-title">See CircuitExplorer in action.</h2><p>A 4-minute 35-second video walkthrough of the system.</p></div>
-      <video controls playsinline preload="metadata" aria-label="CircuitExplorer video user guide">
+      <div class="section-intro"><div class="eyebrow">USER GUIDE</div><h2 id="video-title">See SCALE in action.</h2><p>A 4-minute 35-second video walkthrough of the system.</p></div>
+      <video controls playsinline preload="metadata" aria-label="SCALE video user guide">
         <source src="user-guide.mp4" type="video/mp4">
         Your browser does not support embedded video. <a href="user-guide.mp4">Open the video guide</a>.
       </video>
       <p class="video-caption">Play, pause, or expand the video to follow along at your own pace.</p>
     </section>
   </main>
-  <footer><span>CircuitExplorer</span><p>An interactive workspace for exploring language model circuits.</p><a href="https://adigunturu.github.io/AugmentedPhysics/">Layout inspired by Augmented Physics</a></footer>
+  <footer><span>SCALE</span><p>An interactive workspace for exploring language model circuits.</p><a href="https://adigunturu.github.io/AugmentedPhysics/">Layout inspired by Augmented Physics</a></footer>
   <dialog id="image-dialog" aria-label="Expanded system screenshot"><button id="close-dialog" aria-label="Close expanded screenshot">Close ×</button><img id="dialog-image" alt=""></dialog>
   <script src="script.js"></script>
 </body>
