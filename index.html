@@ -6,7 +6,7 @@
   <meta name="description" content="CircuitExplorer makes LLM circuit analysis easier through hierarchical semantic groups and interactive graph exploration.">
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#ffffff">
-  <title>CircuitExplorer — Making LLM Circuit Analysis Easier</title>
+  <title>CircuitExplorer: Understanding LLM Mechanism through Scalable Circuit Analysis</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +14,7 @@
   <main>
     <header class="hero">
       <div class="eyebrow"><span class="mark" aria-hidden="true">⌘</span> INTERACTIVE MODEL INTERPRETABILITY</div>
-      <h1>CircuitExplorer<span>Making LLM Circuit<br>Analysis Easier</span></h1>
-      <p class="subtitle">Move beyond tracing individual features.<br>Explore hierarchical semantic groups through an interactive graph to progressively uncover and understand LLM reasoning pathways.</p>
+      <h1>CircuitExplorer<span>Understanding LLM Mechanism<br>through Scalable Circuit Analysis</span></h1>
       <div class="actions">
         <a class="button primary" href="https://king-prawn-app-eoefo.ondigitalocean.app/" target="_blank" rel="noopener noreferrer">Live Demo <span aria-hidden="true">↗</span></a>
         <a class="button secondary" href="#user-guide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6l2 2 2-2h6v16h-6l-2 1-2-1H4zM12 6v15"/></svg>Video guide</a>
@@ -36,9 +35,10 @@
     </section>
 
     <section class="prose" id="overview">
-      <h2>Overview</h2>
-      <p>Understanding a language model’s output requires navigating a complex network of internal features and connections. CircuitExplorer is an interactive system for exploring computational graphs in language models and finding meaningful circuits.</p>
-      <p>The workspace brings together semantic clusters, circuit graphs, and feature-level evidence. Researchers can move between an overview of the graph and individual features, inspect where features appear across layers and token positions, and compare baseline and steered outputs through intervention experiments.</p>
+      <h2>Abstract</h2>
+      <p>Circuit discovery approaches have increasingly been used to explain Large Language Models (LLMs) by constructing a computational graph with nodes representing internal features and directional edges indicating how one feature influences another. However, such approaches often require analysts to trace a huge volume of individual features and influences across them, and manually infer their semantic meaning, making circuit discovery approaches hard to use in practice.</p>
+      <p>To fill this gap, we propose CircuitExplorer, a novel visual analytics system to help analysts easily explore and comprehensively understand the reasoning pathways of LLMs. It organizes LLM-learned features into hierarchical semantic groups, and then utilizes a directed acyclic graph (DAG)-based visualization to display these semantic groups, enabling progressive and scalable circuit analysis.</p>
+      <p>We extensively evaluated CircuitExplorer through two case studies and a user study with 16 expert participants. The results demonstrated its effectiveness and usability in supporting circuit analysis for explaining LLMs.</p>
     </section>
 
     <section class="workflow wide" aria-labelledby="workflow-title">
